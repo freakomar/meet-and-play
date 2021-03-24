@@ -1,7 +1,7 @@
-const user = require('./user.controllers')
-const meeting = require('./meeting.controllers')
-const meetingPoint = require('./meetingPoint.controllers')
-const placement = require('./placement.controllers')
+const user = require('./user.controller')
+const meeting = require('./meeting.controller')
+const meetingPoint = require('./meetingPoint.controller')
+const placement = require('./placement.controller')
 
 module.exports = {
     user,
