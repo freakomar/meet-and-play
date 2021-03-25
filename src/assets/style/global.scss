@@ -1,0 +1,243 @@
+// Стили для Login и Registration
+.modals {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  background-color: $button;
+}
+.btns {
+  margin: 35px auto 0;
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+}
+.modal {
+  margin: auto;
+  width: 600px;
+  height: 500px;
+  box-shadow: 0px 30px 100px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #ffff;
+  &-sign-up {
+    width: 700px;
+  }
+  &-close {
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 33px;
+    right: 33px;
+    &:hover {
+      cursor: pointer;
+    }
+    &::after {
+      content: "";
+      display: block;
+      margin-top: -2px;
+      width: 15px;
+      height: 2px;
+      background: $text;
+      transform: rotate(45deg);
+      &:hover {
+        background: $button-hover;
+      }
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 2px;
+      background: $text;
+      transform: rotate(-45deg);
+    }
+  }
+  &-title {
+    font-weight: bold;
+    font-size: 32px;
+    &:hover {
+      cursor: default;
+    }
+  }
+  &-form {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  label {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  input,
+  button {
+    margin: 8px 0;
+    outline: none;
+    width: 280px;
+    height: 50px;
+    border: 1px solid $text;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 14px 18px;
+    &:focus {
+      border-color: $button-hover;
+    }
+  }
+  button {
+    margin: 24px 0;
+    background-color: $button;
+    border: 1px solid $button;
+    font-size: 18px;
+    &:hover {
+      cursor: pointer;
+      background-color: $button-hover;
+    }
+    &:focus {
+      border: none;
+    }
+  }
+  &-msg {
+    margin-top: 8px;
+    &:hover {
+      cursor: default;
+    }
+    &-link {
+      margin-top: 8px;
+      color: $text;
+      font-weight: 600;
+      &:hover {
+        color: $button-hover;
+      }
+    }
+  }
+}
+.wrp {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+// конец Стили для Login и Registration
+
+// Стили для side-bar
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 280px;
+  height: 100vh;
+}
+
+.side-bar_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $grey;
+  & > h2 {
+    margin: 32px 0;
+    font-size: 24px;
+  }
+
+  .avatar {
+    border-radius: 50%;
+    background-color: grey;
+    width: 80px;
+    height: 80px;
+  }
+  // .avatar-img {
+  // }
+  .authorization-description {
+    text-align: center;
+    margin: 0 auto;
+    & span {
+      display: block;
+    }
+  }
+  .user-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 140%;
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+  .user-city {
+    font-size: 16px;
+    margin-bottom: 48px;
+  }
+
+  .user-authorization {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 32px 0 68px;
+  }
+}
+
+.side-bar_navigation {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: $litegrey;
+  & > span {
+    font-size: 12px;
+    margin-bottom: 30px;
+    margin-top: auto;
+  }
+
+  .top-list-link,
+  .bottom-list-link {
+    list-style: none;
+    margin-top: 45px;
+  }
+  .link:not(:first-of-type) {
+    margin-top: 18px;
+  }
+
+  .top-link,
+  .bottom-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $text;
+    &::before {
+      content: "";
+      display: block;
+      margin-right: 16px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: grey;
+    }
+  }
+  .bottom-list-link {
+    margin-bottom: 40px;
+  }
+  // .bottom-link {
+  // }
+}
+
+// Стили для главного экрана
+.main-window {
+  flex-grow: 1;
+  .fff {
+    background-color: $button-hover;
+    height: 100vh;
+  }
+}
