@@ -1,18 +1,17 @@
-@import './colors.scss';
-@import './sizes.scss';
-@import './variables.scss';
-
+@import "./colors.scss";
+@import "./sizes.scss";
+@import "./variables.scss";
 
 // Стили для Login и Registration
-.modals {
-  position: relative;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 100vh;
-  background-color: $button;
-}
+// .modals { //спользовались для Lauoyt регистрации и логина
+//   position: relative;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   height: 100vh;
+//   background-color: $button;
+// }
 .btns {
   margin: 35px auto 0;
   width: 600px;
@@ -147,7 +146,6 @@
   flex-basis: 280px;
   height: 100vh;
 }
-
 .side-bar_header {
   display: flex;
   flex-direction: column;
@@ -191,7 +189,6 @@
     margin: 32px 0 68px;
   }
 }
-
 .side-bar_navigation {
   display: flex;
   flex-grow: 1;
@@ -221,6 +218,9 @@
     align-items: center;
     text-decoration: none;
     color: $text;
+    &:hover {
+      color: $link-color-hover;
+    }
     &::before {
       content: "";
       display: block;
@@ -234,18 +234,87 @@
   .bottom-list-link {
     margin-bottom: 40px;
   }
-  // .bottom-link {
-  // }
-}
 
-// Стили для главного экрана
-.main-window {
-  flex-grow: 1;
-  .fff {
-    background-color: $button-hover;
-    height: 100vh;
+  .active-link {
+    color: $button-hover !important;
   }
 }
-.active-link {
-  color: $link-color-active !important;
+// Конец стилей для .side-bar
+
+//Стили для страницы Избранное
+.favorites {
+  padding: 32px;
+
+  .favorites-title {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+    height: 50px;
+  }
+  .btn-search {
+    display: block;
+    width: 280px;
+    height: 50px;
+    border: 1px solid $text;
+    float: right;
+    border-radius: 10px;
+    &:focus {
+      border-color: $button-hover;
+    }
+    &:hover {
+      background-color: $button-hover;
+      border: none;
+    }
+  }
+  .filter-block {
+    margin: 40px 0;
+  }
+  .filter {
+    display: flex;
+    list-style: none;
+  }
+  .filter-name:not(:last-child) {
+    margin-right: 16px;
+  }
+  .btn-filter {
+    display: block;
+    background: $litegrey;
+    border-radius: 105px;
+    padding: 7px 12px;
+    line-height: 25px;
+    &:hover {
+      background-color: $button-hover;
+    }
+  }
+  .play-cart-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 280px);
+    grid-row-gap: 16px;
+    grid-column-gap: 32px;
+    justify-content: space-evenly;
+  }
+  .play-cart {
+    max-height: 230px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .img-play-cart {
+    display: block;
+    margin-bottom: 8px;
+  }
+  .play-cart-name,
+  .play-cart-age,
+  .play-cart-data {
+    display: inline-block;
+  }
+  .play-cart-name,
+  .play-cart-age {
+    font-weight: bold;
+  }
+  .play-cart-data {
+    float: right;
+  }
 }
+// Конец стилей для страницы Избранное
