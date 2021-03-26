@@ -1,24 +1,16 @@
 <template>
   <div class="app container">
     <map-nav />
-    <div class="content">
-      <main class="main-window">
-        <div class="modals">
-          <router-view />
-        </div>
-      </main>
+    <div class="main-window">
+      <router-view />
     </div>
   </div>
-
-  <!-- <component :is="layout">
-    <router-view />
-  </component> -->
 </template>
 
 <script>
-// для определения, какой layoyt подгружать
+// для определения, какой layout подгружать
 import MapNav from "@/components/Layouts/Nav";
-export default {  
+export default {
   components: {
     MapNav,
   },
@@ -33,10 +25,12 @@ export default {
   display: flex;
   flex-direction: row;
 }
-.content {
+.main-window {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 85vw;
+  flex-grow: 1;
+  overflow-y: auto;
+  position: relative;
 }
 </style>

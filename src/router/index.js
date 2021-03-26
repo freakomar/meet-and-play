@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Participating from "@/views/Participating"
-import MyMeetings from "@/views/MyMeetings"
-import Favorites from "@/views/Favorites"
-import Create from "@/views/Create"
-import Settings from "@/views/Settings"
-import Support from "@/views/Support"
+import Participating from "@/views/Participating";
+import MyMeetings from "@/views/MyMeetings";
+import Favorites from "@/views/Favorites";
+import Create from "@/views/Create";
+import Settings from "@/views/Settings";
+import Support from "@/views/Support";
 import Login from "../views/Login.vue";
 import Registration from "../views/Registration.vue";
 
@@ -12,13 +12,13 @@ const routes = [
   {
     path: "/login",
     name: "Login",
-    meta: { layout: "empty" }, // для определения, какой layoyt подгружать
+    // meta: { layout: "empty" }, // для определения, какой layout подгружать
     component: Login,
   },
   {
     path: "/registration",
     name: "Registration",
-    meta: { layout: "empty" },
+    // meta: { layout: "empty" },
     component: Registration,
   },
   {
@@ -51,7 +51,6 @@ const routes = [
     name: "support",
     component: Support,
   },
- 
 ];
 
 const router = createRouter({
