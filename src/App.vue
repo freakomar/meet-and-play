@@ -1,6 +1,10 @@
 <template>
   <div class="app container">
-    <map-nav />
+    <map-nav
+      :navItemMenu="navItemMenu"
+      :navBottomMenu="navBottomMenu"
+      :titleAndCopy="titleAndCopy"
+    />
     <div class="main-window">
       <router-view />
     </div>
@@ -10,10 +14,16 @@
 <script>
 // для определения, какой layout подгружать
 import MapNav from "@/components/Layouts/Nav";
+import { navItemMenu, navBottomMenu, titleAndCopy } from "./setup";
 export default {
   components: {
     MapNav,
   },
+  data: () => ({
+    navItemMenu,
+    navBottomMenu,
+    titleAndCopy,
+  }),
 };
 </script>
 
