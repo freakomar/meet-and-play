@@ -1,3 +1,8 @@
+@import './colors.scss';
+@import './sizes.scss';
+@import './variables.scss';
+
+
 // Стили для Login и Registration
 .modals {
   position: relative;
@@ -240,4 +245,7 @@
     background-color: $button-hover;
     height: 100vh;
   }
+}
+.active-link {
+  color: $link-color-active !important;
 }
