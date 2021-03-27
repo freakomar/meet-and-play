@@ -1,6 +1,6 @@
 <template>
   <div class="side-bar_header d-flex flex-column align-items-center">
-    <h2>{{ title }}</h2>
+    <h2 class="font-weight-bold">{{ title }}</h2>
     <div class="avatar">
       <img class="avatar-img" src="#" alt="avatar" />
     </div>
