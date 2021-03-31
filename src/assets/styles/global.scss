@@ -145,12 +145,16 @@
   flex-direction: column;
   flex-basis: 280px;
   height: 100vh;
+  background-color: $litegrey;
 }
 .side-bar_header {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: $grey;
+  -moz-border-radius-bottomright: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   & > h2 {
     margin: 32px 0;
     font-size: 24px;
@@ -242,10 +246,10 @@
 // Конец стилей для .side-bar
 
 //Стили для страницы Избранное
-.favorites {
+.views-main {
   padding: 32px;
 
-  .favorites-title {
+  .views-main-title {
     display: inline-block;
     font-size: 32px;
     font-weight: 700;
@@ -291,7 +295,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, 280px);
     grid-row-gap: 16px;
-    grid-column-gap: 32px;
+    grid-column-gap: 23px;
     justify-content: space-evenly;
   }
   .play-cart {
@@ -303,6 +307,7 @@
   .img-play-cart {
     display: block;
     margin-bottom: 8px;
+    border-radius: 15px;
   }
   .play-cart-name,
   .play-cart-age,
