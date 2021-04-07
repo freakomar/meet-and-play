@@ -1,19 +1,19 @@
 <template>
-  <div v-for="(meeting, key) in meetings" :key="`meeting-${key}`" class="play-cart">
+  <div v-for="(meeting, key) in meetings" :key="`meeting-${key}`" class="max-h-56 hover:cursor-pointer">
     <img
-      class="img-play-cart d-block"
+      class="block mb-2 rounded-2xl"
       :src="meeting.src"
       alt="play-cart"
     />
-    <span class="play-cart-name d-inline-block font-weight-bold">{{ meeting.name }}</span>
-    <span class="play-cart-age d-inline-block font-weight-bold">(до {{ meeting.age }} лет)</span>
-    <span class="play-cart-data d-inline-block float-right">{{ meeting.date }}</span>
+    <span class="inline-block font-bold">{{ meeting.name }}</span>
+    <span class="inline-block font-bold">(до {{ meeting.age }} лет)</span>
+    <span class="inline-block float-right">{{ meeting.date }}</span>
   </div>
 </template>
 
 <script>
 export default {
-  name: "mapMeetingsForm",
+  name: "MeetingsForm",
   props: {
     meetings: {
       type: Array,
