@@ -1,8 +1,8 @@
 <template>
-  <li class="link">
+  <li class="mt-5">
     <router-link
       :to="to"
-      class="top-link d-flex align-items-center text-decoration-none"
+      class="top-link flex items-center no-underline text-black hover:text-blue-530"
       active-class="active-link"
       ><slot
     /></router-link>
