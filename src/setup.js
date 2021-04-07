@@ -1,7 +1,7 @@
 const navItemMenu = [
     {
         name: "Учавствую",
-        to: "/"
+        to: "/patricipating"
     },
     {
         name: "Мои встречи",
