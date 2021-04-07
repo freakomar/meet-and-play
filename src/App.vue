@@ -1,11 +1,11 @@
 <template>
-  <div class="app container">
+  <div class="container w-screen h-screen flex flex-row">
     <map-nav
       :navItemMenu="navItemMenu"
       :navBottomMenu="navBottomMenu"
       :titleAndCopy="titleAndCopy"
     />
-    <div class="main-window">
+    <div class="flex h-screen flex-col flex-grow overflow-y-auto relative">
       <router-view />
     </div>
   </div>
@@ -26,21 +26,7 @@ export default {
   }),
 };
 </script>
-
+<style src="./assets/tailwind.css"> </style>
 <style lang="scss">
 @import "assets/styles/global.scss";
-.app {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-}
-.main-window {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  flex-grow: 1;
-  overflow-y: auto;
-  position: relative;
-}
 </style>
