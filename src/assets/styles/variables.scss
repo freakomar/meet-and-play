@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  &:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container {
+  @include wrapper;
+  margin: 0 auto;
+  display: flex;
+}
