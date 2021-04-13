@@ -181,9 +181,9 @@
     margin: 32px 0 68px;
   }
 }
-.side-bar_navigation { 
+.side-bar_navigation {
   .top-link,
-  .bottom-link {    
+  .bottom-link {
     &::before {
       content: "";
       display: block;
@@ -236,15 +236,15 @@
   .filter {
     display: flex;
     list-style: none;
-  } 
- 
+  }
+
   .play-cart-block {
     display: grid;
     grid-template-columns: repeat(auto-fit, 280px);
     grid-row-gap: 16px;
     grid-column-gap: 23px;
     justify-content: space-evenly;
-  }  
+  }
 }
 // Конец стилей для страницы Избранное
 
@@ -257,7 +257,6 @@
   flex-direction: column;
   gap: 32px;
 
-
   .header {
     font-size: 32px;
     line-height: 140%;
@@ -267,7 +266,7 @@
   .filters {
     display: flex;
     gap: 16px;
-    
+
     .filter-btn {
       outline: none;
       height: 40px;
@@ -276,15 +275,15 @@
       border-radius: 105px;
       padding: 7px 12px;
       font-size: 16px;
-      background: #E5E5E5;
-  
+      background: #e5e5e5;
+
       &:hover {
         cursor: pointer;
         color: #727272;
       }
-  
+
       &:focus {
-        background-color: #FFDADA;
+        background-color: #ffdada;
       }
     }
   }
@@ -294,7 +293,8 @@
     flex-wrap: wrap;
     gap: 16px 32px;
 
-    input, button {
+    input,
+    button {
       outline: none;
       width: 280px;
       height: 48px;
@@ -302,35 +302,34 @@
       box-sizing: border-box;
       border-radius: 10px;
       padding: 14px 18px;
-  
+
       &:focus {
-        border: 2px solid #FFDADA;
+        border: 2px solid #ffdada;
       }
 
       &::placeholder {
-        color: #C4C4C4;
+        color: #c4c4c4;
       }
     }
 
     .search__btn {
-        background-color: #D2D2D2;
-        border: none;
-        font-size: 14px;
-        font-weight: 500;
-    
-        &:hover {
-          cursor: pointer;
-          background-color: #e9e9e9;
-        }
-    
-        &:focus {
-          background-color: #FFDADA;
-        }
+      background-color: #d2d2d2;
+      border: none;
+      font-size: 14px;
+      font-weight: 500;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #e9e9e9;
+      }
+
+      &:focus {
+        background-color: #ffdada;
+      }
     }
   }
 
   .meetings {
-
     .meetings__header {
       font-size: 24px;
       line-height: 140%;
@@ -339,6 +338,7 @@
     }
 
     .meetings__meeting-list {
+      max-width: 905px;
       display: flex;
       flex-wrap: wrap;
       gap: 16px 32px;
@@ -350,7 +350,7 @@
           height: 200px;
           position: relative;
           border-radius: 10px;
-          background: #C4C4C4;
+          background: #c4c4c4;
           margin-bottom: 8px;
         }
 
@@ -360,7 +360,7 @@
           left: 10px;
           bottom: 0;
         }
-        
+
         .meeting-card__info {
           display: flex;
           justify-content: space-between;
