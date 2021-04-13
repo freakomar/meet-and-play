@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Participating from "@/views/Participating";
 import MyMeetings from "@/views/MyMeetings";
+import MyMeetingCard from "@/views/MyMeetingCard";
 import Favorites from "@/views/Favorites";
 import Create from "@/views/Create";
 import Settings from "@/views/Settings";
@@ -36,6 +37,11 @@ const routes = [
     path: "/myMeetings",
     name: "myMeetings",
     component: MyMeetings,
+  },
+  {
+    path: "/myMeetingCard",
+    name: "myMeetingCard",
+    component: MyMeetingCard,
   },
   {
     path: "/favorites",

@@ -5,7 +5,7 @@
       :navBottomMenu="navBottomMenu"
       :titleAndCopy="titleAndCopy"
     />
-    <div class="flex h-screen flex-col flex-grow overflow-y-auto relative">
+    <div class="container-w flex h-screen flex-col flex-grow overflow-y-auto relative">
       <router-view />
     </div>
   </div>

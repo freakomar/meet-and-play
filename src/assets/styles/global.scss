@@ -12,6 +12,13 @@
 //   height: 100vh;
 //   background-color: $button;
 // }
+
+//на некоторых страницах сайдбар будет очень сжатым, надо указать ширину (!?)
+.container-w{
+  max-width: 80%;
+}
+
+
 .btns {
   margin: 35px auto 0;
   width: 600px;
@@ -377,3 +384,99 @@
     }
   }
 }
+
+.meetings-container {
+  display: flex;
+  margin-top: 32px;
+}
+  .meetings-info {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 15px;
+      &-name{
+        width: 15%;
+      }
+      &-content{}
+    }
+  }
+  .meetings-members {
+    // overflow-x: scroll;
+    margin-bottom: 32px;
+    &__item {
+      display: flex;
+      padding: 10px;
+      box-sizing: border-box;
+      align-items: center;
+      &-img {
+        width: 32px;
+        height: 32px;
+        background: gray;
+        border-radius: 50%;
+        display: block;
+        margin-right: 10px;
+      }
+      &-name {
+        display: block;
+      }
+    }
+
+  }
+  .meetings-btns{
+    display: flex;
+    justify-content: flex-start
+  }
+  .btn-meetings {
+    display: block;
+    width: 280px;
+    height: 50px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    &:first-child{
+      margin-right: 32px;
+    }
+  }
+  .meetings-discussions {
+    width: 30%;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 24px 32px;
+    box-sizing: border-box;
+    filter: drop-shadow(4px 0px 35px rgba(196, 196, 196, 0.5));
+    &__item {
+      margin-top: 16px;
+      &-name {
+        margin-bottom: 8px;
+      }
+    }
+    &__form {
+      margin-top: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      textarea {
+        border: 1px solid #272727;
+        box-sizing: border-box;
+        border-radius: 10px;
+        height: 104px;
+        margin-right: 5px;
+        padding: 16px;
+        box-sizing: border-box;
+      }
+      button {
+        width: 15%;
+          >svg{
+          fill: #272727;
+          &:hover {
+            fill: #3734A9;
+          }
+       }
+      }
+    }
+
+  }
