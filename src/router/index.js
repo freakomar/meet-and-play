@@ -7,7 +7,7 @@ import Settings from "@/views/Settings";
 import Support from "@/views/Support";
 import Login from "../views/Login.vue";
 import Registration from "../views/Registration.vue";
-import Home from "../views/Home.vue"
+import Home from "../views/Home"
 
 const routes = [
   {

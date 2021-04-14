@@ -1,6 +1,10 @@
 const navItemMenu = [
     {
-        name: "Учавствую",
+        name: "Главная",
+        to: "/"
+    },
+    {
+        name: "Участвую",
         to: "/patricipating"
     },
     {
@@ -29,8 +33,8 @@ const navBottomMenu = [
 ]
 const titleAndCopy = [
     {
-        name: "Meet & Play",        
-    },   
+        name: "Meet & Play",
+    },
 ]
 
 module.exports = {

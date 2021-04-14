@@ -1,8 +1,6 @@
 <template>
   <li v-for="(item, key) in filter" :key="`filter-${key}`" class="mr-4">
-    <button
-      class="block bg-gray-200 rounded-full py-1 px-3 leading-6 hover:bg-blue-410"
-    >
+    <button class="block filter-btn rounded-full py-1 px-3 leading-6">
       {{ item.name }}
     </button>
   </li>

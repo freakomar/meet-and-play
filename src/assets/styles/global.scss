@@ -1,214 +1,18 @@
 @import "./colors.scss";
 @import "./sizes.scss";
 @import "./variables.scss";
+@import "./loyout.scss";
+@import "./meetings.scss";
+@import "./create_meeting.scss";
+@import "./registration_login.scss";
+@import "./settings.scss";
+@import "./support.scss";
 
-// Стили для Login и Registration
-// .modals { //спользовались для Lauoyt регистрации и логина
-//   position: relative;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-//   height: 100vh;
-//   background-color: $button;
-// }
-.btns {
-  margin: 35px auto 0;
-  width: 600px;
-  display: flex;
-  justify-content: space-around;
-}
-.modal {
-  margin: auto;
-  width: 600px;
-  height: 500px;
-  box-shadow: 0px 30px 100px rgba(0, 0, 0, 0.12);
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  overflow: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: #ffff;
-  &-sign-up {
-    width: 700px;
-  }
-  &-close {
-    display: block;
-    width: 14px;
-    height: 14px;
-    position: absolute;
-    top: 33px;
-    right: 33px;
-    &:hover {
-      cursor: pointer;
-    }
-    &::after {
-      content: "";
-      display: block;
-      margin-top: -2px;
-      width: 15px;
-      height: 2px;
-      background: $text;
-      transform: rotate(45deg);
-      &:hover {
-        background: $button-hover;
-      }
-    }
-    &::before {
-      content: "";
-      display: block;
-      width: 15px;
-      height: 2px;
-      background: $text;
-      transform: rotate(-45deg);
-    }
-  }
-  &-title {
-    font-weight: bold;
-    font-size: 32px;
-    &:hover {
-      cursor: default;
-    }
-  }
-  &-form {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
-  label {
-    margin-top: 16px;
-    display: flex;
-    flex-direction: column;
-  }
-  input,
-  button {
-    margin: 8px 0;
-    outline: none;
-    width: 280px;
-    height: 50px;
-    border: 1px solid $text;
-    box-sizing: border-box;
-    border-radius: 10px;
-    padding: 14px 18px;
-    &:focus {
-      border-color: $button-hover;
-    }
-  }
-  button {
-    margin: 24px 0;
-    background-color: $button;
-    border: 1px solid $button;
-    font-size: 18px;
-    line-height: initial;
-    &:hover {
-      cursor: pointer;
-      background-color: $button-hover;
-    }
-    &:focus {
-      border: none;
-    }
-  }
-  &-msg {
-    margin-top: 8px;
-    &:hover {
-      cursor: default;
-    }
-    &-link {
-      margin-top: 8px;
-      color: $text;
-      font-weight: 600;
-      &:hover {
-        color: $button-hover;
-      }
-    }
-  }
-}
-.wrp {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-// конец Стили для Login и Registration
 
-// Стили для side-bar
-
-.side-bar_header {
-  & > h2 {
-    margin: 32px 0;
-    font-size: 24px;
-  }
-
-  .avatar {
-    border-radius: 50%;
-    background-color: grey;
-    width: 80px;
-    height: 80px;
-  }
-  // .avatar-img {
-  // }
-  .authorization-description {
-    text-align: center;
-    margin: 0 auto;
-    & span {
-      display: block;
-    }
-  }
-  .user-name {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 140%;
-    margin-top: 16px;
-    margin-bottom: 8px;
-  }
-  .user-city {
-    font-size: 16px;
-    margin-bottom: 48px;
-  }
-
-  .user-authorization {
-    font-weight: bold;
-    font-size: 18px;
-    margin: 32px 0 68px;
-  }
-}
-.side-bar_navigation { 
-  .top-link,
-  .bottom-link {    
-    &::before {
-      content: "";
-      display: block;
-      margin-right: 16px;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      background-color: grey;
-    }
-  }
-  .bottom-list-link {
-    margin-bottom: 40px;
-  }
-
-  .active-link {
-    color: $button-hover !important;
-  }
-}
-// Конец стилей для .side-bar
-
-//Стили для страницы Избранное
 .views-main {
   padding: 32px;
 
-  .views-main-title {
+  &__title {
     display: inline-block;
     font-size: 32px;
     font-weight: 700;
@@ -216,164 +20,26 @@
     height: 50px;
   }
   .btn-search {
-    display: block;
-    width: 280px;
-    height: 50px;
-    border: 1px solid $text;
     float: right;
-    border-radius: 10px;
-    &:focus {
-      border-color: $button-hover;
-    }
-    &:hover {
-      background-color: $button-hover;
-      border: none;
-    }
   }
   .filter-block {
-    margin: 40px 0;
-  }
-  .filter {
-    display: flex;
-    list-style: none;
-  } 
- 
-  .play-cart-block {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 280px);
-    grid-row-gap: 16px;
-    grid-column-gap: 23px;
-    justify-content: space-evenly;
-  }  
-}
-// Конец стилей для страницы Избранное
+    margin: 32px 0;
 
-// Стили Home
-
-.content {
-  padding: 32px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-
-
-  .header {
-    font-size: 32px;
-    line-height: 140%;
-    font-weight: bold;
+    .filter {
+      display: flex;
+    } 
   }
 
-  .filters {
-    display: flex;
-    gap: 16px;
-    
-    .filter-btn {
-      outline: none;
-      height: 40px;
-      border: none;
-      box-sizing: border-box;
-      border-radius: 105px;
-      padding: 7px 12px;
-      font-size: 16px;
-      background: #E5E5E5;
-  
-      &:hover {
-        cursor: pointer;
-        color: #727272;
-      }
-  
-      &:focus {
-        background-color: #FFDADA;
-      }
-    }
-  }
-
-  .search {
+  //есть только на главной
+  .search-block {
     display: flex;
     flex-wrap: wrap;
     gap: 16px 32px;
-
-    input, button {
-      outline: none;
-      width: 280px;
-      height: 48px;
-      border: 1px solid #000;
-      box-sizing: border-box;
-      border-radius: 10px;
-      padding: 14px 18px;
-  
-      &:focus {
-        border: 2px solid #FFDADA;
-      }
-
-      &::placeholder {
-        color: #C4C4C4;
-      }
-    }
-
-    .search__btn {
-        background-color: #D2D2D2;
-        border: none;
-        font-size: 14px;
-        font-weight: 500;
-    
-        &:hover {
-          cursor: pointer;
-          background-color: #e9e9e9;
-        }
-    
-        &:focus {
-          background-color: #FFDADA;
-        }
-    }
+    margin-bottom: 32px;
   }
-
-  .meetings {
-
-    .meetings__header {
-      font-size: 24px;
-      line-height: 140%;
-      font-weight: bold;
-      margin-bottom: 24px;
-    }
-
-    .meetings__meeting-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px 32px;
-
-      .meeting-card {
-        width: 280px;
-
-        .meeting-card__block {
-          height: 200px;
-          position: relative;
-          border-radius: 10px;
-          background: #C4C4C4;
-          margin-bottom: 8px;
-        }
-
-        .meeting-card__header {
-          position: absolute;
-          font-weight: bold;
-          left: 10px;
-          bottom: 0;
-        }
-        
-        .meeting-card__info {
-          display: flex;
-          justify-content: space-between;
-        }
-
-        &:hover {
-          cursor: pointer;
-
-          .meeting-card__block {
-            background-color: #e9e9e9;
-          }
-        }
-      }
-    }
+  .play-cards-header {
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 32px 0;
   }
 }

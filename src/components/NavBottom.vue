@@ -3,11 +3,11 @@
     <i class="el-icon-delete"></i>
     <router-link
       :to="to"
-      class="bottom-link flex items-center no-underline text-black hover:text-blue-530"
+      class="bottom-link flex items-center no-underline text-black"
       active-class="active-link"
       ><slot
     /></router-link>
-  </li>  
+  </li>
 </template>
 
 <script>
