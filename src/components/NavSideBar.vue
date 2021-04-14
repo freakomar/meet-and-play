@@ -1,5 +1,5 @@
 <template>
-  <div class="side-bar_header items-center flex flex-col bg-gray-380 rounded-br-2xl">
+  <div class="side-bar_header items-center flex flex-col rounded-br-2xl">
     <h2 class="font-weight-bold">{{ title }}</h2>
     <div class="avatar">
       <img class="avatar-img" src="#" alt="avatar" />

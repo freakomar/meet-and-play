@@ -1,7 +1,7 @@
 <template>
   <section class="views-main">
-    <h2 class="views-main-title d-inline-block">{{ config.pageTitle }}</h2>
-    <button class="btn-search d-block" type="button">
+    <h2 class="views-main__title d-inline-block">{{ config.pageTitle }}</h2>
+    <button class="btn-search btn d-block" type="button">
       {{ config.pageBtn }}
     </button>
     <div class="mt-16 w-8/12">

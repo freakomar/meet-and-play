@@ -1,0 +1,73 @@
+@import "./colors.scss";
+@import "./sizes.scss";
+@import "./variables.scss";
+
+//Стили для Боковой навигации
+
+.side-bar_header {
+    background-color: $accent_purple;
+    color: #fff;
+  
+    & > h2 {
+      margin: 32px 0;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .avatar {
+      border-radius: 50%;
+      background-color: grey;
+      width: 80px;
+      height: 80px;
+    }
+    .authorization-description {
+      text-align: center;
+      margin: 0 auto;
+      & span {
+        display: block;
+      }
+      .user-name {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 140%;
+        margin-top: 16px;
+        margin-bottom: 8px;
+      }
+      .user-city {
+        font-size: 16px;
+        margin-bottom: 48px;
+      }
+    }
+    .user-authorization {
+      font-weight: bold;
+      font-size: 18px;
+      margin: 32px 0 68px;
+    }
+}
+  
+.side-bar_navigation { 
+    box-shadow: 0px 30px 100px rgba(0, 0, 0, 0.12);
+
+    .top-link,
+    .bottom-link {    
+        &:hover {
+            color: $btn-fill-hover
+        }    
+        &::before {
+            content: "";
+            display: block;
+            margin-right: 16px;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: grey;
+        }
+    }
+    .bottom-list-link {
+        margin-bottom: 40px;
+    }
+
+    .active-link {
+        color: $btn-fill-hover !important;
+        font-weight: 600;
+    }
+}

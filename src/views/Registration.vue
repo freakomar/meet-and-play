@@ -23,7 +23,7 @@
           <input type="password" name="" id="" placeholder="******" />
         </label>
       </div>
-      <button type="button" class="form-btn">Зарегистрироваться</button>
+      <button type="button" class="btn-fill">Зарегистрироваться</button>
     </form>
     <span class="modal-msg">Уже зарегистрированы?</span>
     <a href="#" class="modal-msg-link">Войти</a>

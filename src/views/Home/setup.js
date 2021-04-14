@@ -1,8 +1,7 @@
 export const config = {
-    crudName: 'myMeetings',
-    pageName: 'mapMyMeetingsPage',
-    pageTitle: 'Мои встречи',
-    pageBtn: 'Найти игру',
+    crudName: 'home',
+    pageName: 'mapHomePage',
+    pageTitle: 'Выбери спортивную игру'
 }
 
 export const meetings = [

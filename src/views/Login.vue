@@ -11,7 +11,7 @@
         <span class="modal-name">Пароль</span>
         <input type="password" name="" id="" placeholder="******" />
       </label>
-      <button class="form-btn">Найти</button>
+      <button class="btn-fill">Найти</button>
     </form>
     <span class="modal-msg">Еще не с нами?</span>
     <a href="#" class="modal-msg-link">Зарегистрироваться</a>

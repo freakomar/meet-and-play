@@ -2,10 +2,12 @@
   <div
     v-for="(title, key) in titleAndCopy"
     :key="`titleAndCopy-${key}`"
-    class="flex flex-col w-72 h-screen bg-gray-200"
+    class="flex flex-col w-72 h-screen"
   >
     <nav-side-bar :title="title.name" />
-    <nav class="side-bar_navigation flex flex-grow flex-col items-center font-medium text-base bg-gray-200">
+    <nav
+      class="side-bar_navigation flex flex-grow flex-col items-center font-medium text-base"
+    >
       <div>
         <ul class="list-none mt-11">
           <nav-item
